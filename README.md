@@ -5,6 +5,7 @@
 # Apply an ICA/PCA in GTS_CME and place output files in a suitable location. These remove lines of data which needs to be accounted for. I used two methods to solve this problem. 
 # 1) Set all NaN values to zero in the GTS_CME source code writefile_hector.m, then use GTStoStack to format these files back into the format for Bletery and Nocquets code.
 # 2) Use Fill_Outliers to interpolate for the missing NaN values and then use the second code in GTStoStack to place this data into the file format for Bletery and Nocquets code. 
+# Renaming files can then be used to return the file names to the exact same file names as the original dataset.
 # Replace the original .dat files with the new .dat files in the stack and run the original code from the dot product.
 # Unfortunately this has to be done individually for earthquakes and cannot be applied to the entire stack at once. 
 
